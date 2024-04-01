@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_1133380_leave_ma.leave_calculator_user" name="x_1133380_leave_ma.leave_calculator_user">214f29dd93110210528d36718bba10fe</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-31 13:04:43</sys_created_on>
+        <sys_id>a54fa11593510210528d36718bba108e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>214f29dd93110210528d36718bba10fe</sys_name>
+        <sys_package display_value="Leave Management System" source="x_1133380_leave_ma">b0b0464593110210528d36718bba100e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">b0b0464593110210528d36718bba100e</sys_scope>
+        <sys_update_name>sys_embedded_help_role_a54fa11593510210528d36718bba108e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-31 13:04:43</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

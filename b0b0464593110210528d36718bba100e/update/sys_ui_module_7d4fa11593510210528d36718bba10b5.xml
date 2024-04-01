@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Leave Management System">77c5ce4d93510210528d36718bba1072</application>
+        <filter/>
+        <name>Leave Calculators</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_1133380_leave_ma.leave_calculator_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-31 13:04:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7d4fa11593510210528d36718bba10b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Leave Calculators</sys_name>
+        <sys_package display_value="Leave Management System" source="x_1133380_leave_ma">b0b0464593110210528d36718bba100e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">b0b0464593110210528d36718bba100e</sys_scope>
+        <sys_update_name>sys_ui_module_7d4fa11593510210528d36718bba10b5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-31 13:04:45</sys_updated_on>
+        <table>x_1133380_leave_ma_leave_calculator</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>
