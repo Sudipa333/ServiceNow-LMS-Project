@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7c4eed9193510210528d36718bba10fb" label="Leave Calculator" max_length="40" name="x_1133380_leave_ma_leave_calculator" type="collection">
+        <element choice="3" choice_field="location" choice_table="sys_user" label="Country" max_length="32" name="country" reference="core_country" type="reference">
+            <choice/>
+        </element>
+        <element label="Ending Month" max_length="40" name="ending_month" type="string"/>
+        <element label="Leaves" max_length="40" name="leaves" type="float"/>
+        <element choice="1" label="Leave Assignment" max_length="40" name="leave_assignment" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Monthly" value="m"/>
+                <element inactive_on_update="false" label="Yearly" value="y"/>
+            </choice>
+        </element>
+        <element choice="3" choice_field="leave_type" choice_table="x_1133380_leave_ma_leave_request" default="cl" label="Leave Type" max_length="40" name="leave_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Casual Leave" sequence="0" value="cl"/>
+                <element inactive_on_update="false" label="Earned Leave" sequence="1" value="el"/>
+                <element inactive_on_update="false" label="Sick Leave" sequence="2" value="sl"/>
+                <element inactive_on_update="false" label="WFH" sequence="3" value="wfh"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Starting Month" max_length="40" name="starting_month" type="string"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+    </element>
+</database>

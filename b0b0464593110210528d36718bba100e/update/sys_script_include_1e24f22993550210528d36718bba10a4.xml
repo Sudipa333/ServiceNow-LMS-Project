@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1133380_leave_ma.lmsAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>lmsAjax</name>
+        <script><![CDATA[var lmsAjax = Class.create();
+lmsAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    gateDateDiff: function() {
+        var d1 = new GlideDate();
+        d1.setDisplayValue(this.getParameter('sysparm_start'));
+        var d2 = new GlideDate();
+        d2.setDisplayValue(this.getParameter('sysparm_end'));
+
+        var duration = GlideDate.subtract(d1, d2);
+//         gs.log('this is duration-' + duration);
+        return duration.getNumericValue();
+    },
+	getLeaveBucket: function() {
+		var gr = new GlideRecord('x_1133380_leave_ma_leave_bucket');
+		gr.addQuery('employee',this.getParameter('sysparm_user'));
+		gr.addQuery('leave_type',this.getParameter('sysparm_leavetype'));
+		gr.query();
+		if(gr.next()){
+			var leaveDetails = {};
+			leaveDetails.accrued = ''+ gr.accrued;
+			leaveDetails.balance = ''+gr.balance;
+			leaveDetails.taken = ''+gr.taken;
+			return JSON.stringify(leaveDetails);
+		}
+	},
+    type: 'lmsAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-01 12:55:45</sys_created_on>
+        <sys_id>1e24f22993550210528d36718bba10a4</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>lmsAjax</sys_name>
+        <sys_package display_value="Leave Management System" source="x_1133380_leave_ma">b0b0464593110210528d36718bba100e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Leave Management System">b0b0464593110210528d36718bba100e</sys_scope>
+        <sys_update_name>sys_script_include_1e24f22993550210528d36718bba10a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-01 16:38:49</sys_updated_on>
+    </sys_script_include>
+</record_update>
